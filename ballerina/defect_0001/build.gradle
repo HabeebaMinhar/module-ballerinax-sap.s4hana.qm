@@ -22,10 +22,10 @@ plugins {
     id 'io.ballerina.plugin'
 }
 
-description = 'Ballerina - SAP S/4HANA Quality Management API'
+description = 'Ballerina - SAP S/4HANA defect_0001'
 
-def packageName = "sap.s4hana.qm"
-def moduleVersion = project.qmVersion.replace("-SNAPSHOT", "")
+def packageName = "sap.s4hana.defect_0001"
+def moduleVersion = project.defect_0001Version.replace("-SNAPSHOT", "")
 def ballerinaTomlFile = file("${project.projectDir}/Ballerina.toml")
 
 ballerina {
@@ -61,10 +61,10 @@ release {
     buildTasks = ['build']
     failOnSnapshotDependencies = true
     versionPropertyFile = '../../gradle.properties'
-    versionProperties = ['qmVersion']
-    tagTemplate = 'qm-v${version}'
+    versionProperties = ['defect_0001Version']
+    tagTemplate = 'defect_0001-v${version}'
     git {
-        requireBranch = "release-qm-${moduleVersion}"
+        requireBranch = "release-defect_0001-${moduleVersion}"
         pushToRemote = 'origin'
     }
 }

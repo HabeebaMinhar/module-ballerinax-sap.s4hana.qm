@@ -31,13 +31,13 @@ plugins {
 rootProject.name = "module-ballerinax-sap.s4hana.qm"
 
 include ':qm-ballerina'
-include ':qm-ballerina:qm'
+include ':qm-ballerina:defect_0001'
 include ':qm-examples'
 
 
 project(':qm-ballerina').projectDir = file("ballerina")
+project(':qm-defect_0001').projectDir = file("ballerina/defect_0001")
 project(':qm-examples').projectDir = file("examples")
-project(':qm-ballerina:qm').projectDir = file("ballerina/qm")
 
 
 gradleEnterprise {

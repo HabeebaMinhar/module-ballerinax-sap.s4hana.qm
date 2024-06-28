@@ -69,7 +69,7 @@ Execute the commands below to build from the source.
 
    |   API Name  |            Connector             |
    | ----------- | -------------------------------- |
-   | qm | ballerinax/sap.s4hana.qm |
+   | defect_0001 | ballerinax/sap.s4hana.defect_0001|
 
 5. To run tests against different environment:
 

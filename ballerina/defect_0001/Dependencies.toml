@@ -54,13 +54,13 @@ modules = [
 
 [[package]]
 org = "ballerinax"
-name = "sap.s4hana.qm"
+name = "sap.s4hana.defect_0001"
 version = "1.0.0"
 dependencies = [
 	{org = "ballerina", name = "io"},
 	{org = "ballerinai", name = "observe"}
 ]
 modules = [
-	{org = "ballerinax", packageName = "sap.s4hana.qm", moduleName = "sap.s4hana.qm"}
+	{org = "ballerinax", packageName = "sap.s4hana.defect_0001", moduleName = "sap.s4hana.defect_0001"}
 ]
 
