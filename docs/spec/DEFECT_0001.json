@@ -26,23 +26,23 @@
       "name": "Scope Items",
       "values": [
         {
-          "text": "[Quality Management in Discrete Manufacturing(1E1)](https://me.sap.com/processnavigator/SolP/1E1 \" Link To BP \")",
+          "text": "[Quality Management in Discrete Manufacturing(1E1)](https:\/\/me.sap.com\/processnavigator\/SolP\/1E1 \" Link To BP \")",
           "format": "markdown"
         },
         {
-          "text": "[Quality Management in Procurement(1FM)](https://me.sap.com/processnavigator/SolP/1FM \" Link To BP \")",
+          "text": "[Quality Management in Procurement(1FM)](https:\/\/me.sap.com\/processnavigator\/SolP\/1FM \" Link To BP \")",
           "format": "markdown"
         },
         {
-          "text": "[Quality Management in Sales(1MP)](https://me.sap.com/processnavigator/SolP/1MP \" Link To BP \")",
+          "text": "[Quality Management in Sales(1MP)](https:\/\/me.sap.com\/processnavigator\/SolP\/1MP \" Link To BP \")",
           "format": "markdown"
         },
         {
-          "text": "[Quality Management in Stock Handling(1MR)](https://me.sap.com/processnavigator/SolP/1MR \" Link To BP \")",
+          "text": "[Quality Management in Stock Handling(1MR)](https:\/\/me.sap.com\/processnavigator\/SolP\/1MR \" Link To BP \")",
           "format": "markdown"
         },
         {
-          "text": "[Nonconformance Management(2QN)](https://me.sap.com/processnavigator/SolP/2QN \" Link To BP \")",
+          "text": "[Nonconformance Management(2QN)](https:\/\/me.sap.com\/processnavigator\/SolP\/2QN \" Link To BP \")",
           "format": "markdown"
         }
       ]
@@ -105,6 +105,7 @@
   "paths": {
     "/Defect": {
       "get": {
+        "operationId": "listDefects",
         "summary": "Get entities from Defect",
         "tags": [
           "Defect"
@@ -166,6 +167,7 @@
         }
       },
       "post": {
+        "operationId": "createDefect",
         "summary": "Add new entity to Defect",
         "tags": [
           "Defect"
@@ -212,6 +214,7 @@
         }
       ],
       "get": {
+        "operationId": "getDefect",
         "summary": "Get entity from Defect by key",
         "tags": [
           "Defect"
@@ -241,6 +244,7 @@
         }
       },
       "patch": {
+        "operationId": "patchDefect",
         "summary": "Update entity in Defect",
         "tags": [
           "Defect"
@@ -268,6 +272,7 @@
     },
     "/Defect/{DefectInternalID}/SAP__self.MarkForDeletion": {
       "post": {
+        "operationId": "createDefect",
         "summary": "Invoke action MarkForDeletion",
         "tags": [
           "Defect"
@@ -308,6 +313,7 @@
     },
     "/Defect/{DefectInternalID}/SAP__self.SetDefectLifecycleStatusToCompleted": {
       "post": {
+        "operationId": "createDefect",
         "summary": "Invoke action SetDefectLifecycleStatusToCompleted",
         "tags": [
           "Defect"
@@ -343,6 +349,7 @@
     },
     "/Defect/{DefectInternalID}/SAP__self.SetDefectLifecycleStatusToInProcess": {
       "post": {
+        "operationId": "createDefect",
         "summary": "Invoke action SetDefectLifecycleStatusToInProcess",
         "tags": [
           "Defect"
@@ -378,6 +385,7 @@
     },
     "/Defect/{DefectInternalID}/SAP__self.SetDefectLifecycleStatusToNotRelevant": {
       "post": {
+        "operationId": "createDefect",
         "summary": "Invoke action SetDefectLifecycleStatusToNotRelevant",
         "tags": [
           "Defect"
@@ -425,6 +433,7 @@
         }
       ],
       "get": {
+        "operationId": "listDefect",
         "summary": "Get entities from related _DefectDetailedDescription",
         "tags": [
           "Defect",
@@ -487,6 +496,7 @@
         }
       },
       "post": {
+        "operationId": "createDefect",
         "summary": "Add new entity to related _DefectDetailedDescription",
         "tags": [
           "Defect",
@@ -522,6 +532,7 @@
     },
     "/DefectDetailedDescription": {
       "get": {
+        "operationId": "listDefectDetailedDescriptions",
         "summary": "Get entities from DefectDetailedDescription",
         "tags": [
           "Defect Detailed Description - Text"
@@ -617,6 +628,7 @@
         }
       ],
       "get": {
+        "operationId": "getDefectDetailedDescription",
         "summary": "Get entity from DefectDetailedDescription by key",
         "tags": [
           "Defect Detailed Description - Text"
@@ -646,6 +658,7 @@
         }
       },
       "patch": {
+        "operationId": "patchDefectDetailedDescription",
         "summary": "Update entity in DefectDetailedDescription",
         "tags": [
           "Defect Detailed Description - Text"
@@ -671,6 +684,7 @@
         }
       },
       "delete": {
+        "operationId": "deleteDefectDetailedDescription",
         "summary": "Delete entity from DefectDetailedDescription",
         "tags": [
           "Defect Detailed Description - Text"
@@ -719,6 +733,7 @@
         }
       ],
       "get": {
+        "operationId": "getDefectDetailedDescription",
         "summary": "Get related _Defect",
         "tags": [
           "Defect Detailed Description - Text",
@@ -751,8 +766,9 @@
     },
     "/$batch": {
       "post": {
+        "operationId": "performBatchOperation",
         "summary": "Send a group of requests",
-        "description": "Group multiple requests into a single request payload, see [Batch Requests](http://docs.oasis-open.org/odata/odata/v4.01/odata-v4.01-part1-protocol.html#sec_BatchRequests).\n\n*Please note that \"Try it out\" is not supported for this request.*",
+        "description": "Group multiple requests into a single request payload, see [Batch Requests](http:\/\/docs.oasis-open.org\/odata\/odata\/v4.01\/odata-v4.01-part1-protocol.html#sec_BatchRequests).\n\n*Please note that \"Try it out\" is not supported for this request.*",
         "tags": [
           "Batch Requests"
         ],
@@ -764,7 +780,7 @@
               "schema": {
                 "type": "string"
               },
-              "example": "--request-separator\nContent-Type: application/http\nContent-Transfer-Encoding: binary\n\nGET Defect HTTP/1.1\nAccept: application/json\n\n\n--request-separator--"
+              "example": "--request-separator\nContent-Type: application\/http\nContent-Transfer-Encoding: binary\n\nGET Defect HTTP\/1.1\nAccept: application\/json\n\n\n--request-separator--"
             }
           }
         },
@@ -776,7 +792,7 @@
                 "schema": {
                   "type": "string"
                 },
-                "example": "--response-separator\nContent-Type: application/http\n\nHTTP/1.1 200 OK\nContent-Type: application/json\n\n{...}\n--response-separator--"
+                "example": "--response-separator\nContent-Type: application\/http\n\nHTTP\/1.1 200 OK\nContent-Type: application\/json\n\n{...}\n--response-separator--"
               }
             }
           },
